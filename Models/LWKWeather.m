@@ -11,6 +11,8 @@
 
 @implementation LWKWeather
 
+@synthesize forecastDate;
+
 @synthesize shortDescription;
 @synthesize description;
 @synthesize icon;
@@ -25,6 +27,8 @@
 {
     if (self = [super init])
     {
+        forecastDate = [NSDate new];
+        
         temperature = 0.0;
         minTemperature = 0.0;
         maxTemperature = 0.0;
@@ -40,6 +44,8 @@
 - (id)copyWithZone:(NSZone *)zone
 {
     LWKWeather *copy = [[self class] new];
+    
+    copy.forecastDate = [forecastDate copyWithZone:zone];
     
     copy.shortDescription = [shortDescription copyWithZone:zone];
     copy.description = [description copyWithZone:zone];

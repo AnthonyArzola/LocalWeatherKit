@@ -149,6 +149,7 @@ static AFHTTPSessionManager * _sharedAfHttpSessionManager = nil;
                                  // Custom mappings
                                  [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"id" toAttribute:@"identifier" onClass:[LWKCity class]]];
                                  [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"deg" toAttribute:@"degrees" onClass:[LWKWind class]]];
+                                 [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"dt" toAttribute:@"forecastDate" onClass:[LWKWeather class]]];
                                  
                                  [parseConfig addObjectMappings:[self generateTemperatureObjectMappings]];
                                  [parseConfig addObjectMappings:[self generateCoordinateObjectMappings]];
@@ -208,6 +209,7 @@ static AFHTTPSessionManager * _sharedAfHttpSessionManager = nil;
                                  // Custom mapping
                                  [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"id" toAttribute:@"identifier" onClass:[LWKCity class]]];
                                  [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"deg" toAttribute:@"degrees" onClass:[LWKWind class]]];
+                                 [parseConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"dt" toAttribute:@"forecastDate" onClass:[LWKWeather class]]];
                                  
                                  [parseConfig addObjectMappings:[self generateTemperatureObjectMappings]];
                                  [parseConfig addObjectMappings:[self generateCoordinateObjectMappings]];

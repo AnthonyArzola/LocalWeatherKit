@@ -114,7 +114,7 @@
     
     XCTestExpectation *expectation = [self expectationWithDescription:@"Get weather using coordinates and expected city count"];
     
-    [_localWeatherManager getCurrentWeatherByCoordinatesWithLatitude:_latitude longitude:_longitude expectedCityCount:10 apiKey:_apiKey withSuccess:^(id responseObject) {
+    [_localWeatherManager getCurrentWeatherByCoordinatesWithLatitude:_latitude longitude:_longitude expectedCityCount:5 apiKey:_apiKey withSuccess:^(id responseObject) {
         XCTAssertTrue(responseObject != nil, @"Unable to get weather using coordinates and city count.");
         [expectation fulfill];
         
