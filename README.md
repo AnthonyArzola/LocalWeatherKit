@@ -1,7 +1,52 @@
 LocalWeatherKit
 ===========
 
-LocalWeatherKit simplifies communication with OpenWeatherMap API
+LocalWeatherKit simplifies communication with OpenWeatherMap API.
+
+This project creates a local pod and was developed using cocoapods 1.2.0.beta.3 and cocoapods-core 1.2.0.beta.3
+
+## Getting Started
+
+1. Get OpenWeatherMap API key (https://openweathermap.org/appid)
+
+2. Reference this pod in your podfile
+```
+pod 'LocalWeatherKit', :path => '../LocalWeatherKit'
+```
+3. Add the following imports
+```objc
+#import "LWKManager.h"
+#import "LWKCities.h"
+#import "LWKCity.h"
+```
+4. Call methods on LWKManager to get weather data and enjoy!
+```objc
+-(void)getCurrentWeatherByCityId:(NSInteger)cityId
+                          apiKey:(NSString *)apiKey
+                     withSuccess:(void (^)(id responseObject))success
+                     withFailure:(void (^)(NSError *error))failure;
+```
+```objc
+-(void)get5DayForecastByCityId:(NSInteger)cityId
+                       apiKey:(NSString *)apiKey
+                  withSuccess:(void (^)(id responseObject))success
+                  withFailure:(void (^)(NSError *error))failure;
+```
+```objc
+-(void)getCurrentWeatherByCoordinatesWithLatitude:(float)latitude
+                                        longitude:(float)longitude
+                                           apiKey:(NSString *)apiKey
+                                      withSuccess:(void (^)(id responseObject))success
+                                      withFailure:(void (^)(NSError *error))failure;
+```
+```objc
+-(void)getCurrentWeatherByCoordinatesWithLatitude:(float)latitude
+                                        longitude:(float)longitude
+                                expectedCityCount:(NSInteger)expectedCityCount
+                                           apiKey:(NSString *)apiKey
+                                      withSuccess:(void (^)(id responseObject))success
+                                      withFailure:(void (^)(NSError *error))failure;
+```                     
 
 ## License
 The MIT License (MIT)

@@ -13,6 +13,8 @@
     
 }
 
+@property (nonatomic, strong) NSDate *forecastDate;
+
 @property (nonatomic, strong) NSString *shortDescription;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, strong) NSString *icon;
