@@ -13,12 +13,14 @@ This project creates a local pod and was developed using cocoapods 1.2.0.beta.3 
 ```
 pod 'LocalWeatherKit', :path => '../LocalWeatherKit'
 ```
+
 3. Add the following imports
 ```objc
 #import "LWKManager.h"
 #import "LWKCities.h"
 #import "LWKCity.h"
 ```
+
 4. Call methods on LWKManager to get weather data and enjoy!
 ```objc
 -(void)getCurrentWeatherByCityId:(NSInteger)cityId
