@@ -50,6 +50,9 @@ pod 'LocalWeatherKit', :path => '../LocalWeatherKit'
                                       withFailure:(void (^)(NSError *error))failure;
 ```                     
 
+## Weather Images
+OpenWeatherMap API specifies image name and provides a basic set of images. For alternative images, look at [LocalWeatherImages](https://github.com/AnthonyArzola/LocalWeatherImages "LocalWeatherImages on GitHub")
+
 ## License
 The MIT License (MIT)
 
