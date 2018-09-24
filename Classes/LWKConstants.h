@@ -15,7 +15,7 @@ static NSString * const API_BASE_URL = @"http://api.openweathermap.org/data/2.5/
 /*! weather: Get weather by City ID */
 static NSString * const API_PATH_WEATHER_BY_CITY_ID = @"weather";
 /*! forecast/city: Get forecasted weather for 5 days with data every 3 hours by City ID */
-static NSString * const API_PATH_FORECAST_BY_CITY_ID = @"forecast/city";
+static NSString * const API_PATH_FORECAST_BY_CITY_ID = @"forecast";
 /*! weather: Get current weather at specified coordinates */
 static NSString * const API_PATH_WEATHER_AT_COORDIANTES =@"weather";
 /*! find: Get current weather at specified coordinates with number of expected cities around coordinate */

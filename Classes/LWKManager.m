@@ -106,7 +106,7 @@ static AFHTTPSessionManager * _sharedAfHttpSessionManager = nil;
                    withSuccess:(void (^)(id responseObject))success
                    withFailure:(void (^)(NSError *error))failure
 {
-    // API Example: http://api.openweathermap.org/data/2.5/forecast/city?id=5344994&APPID={YOUR_APIKEY}
+    // API Example: http://api.openweathermap.org/data/2.5/forecast?id=5344994&APPID={YOUR_APIKEY}
     
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     [parameters setObject:[NSDecimalNumber numberWithInteger:cityId] forKey:PARAMETER_CITY_ID];

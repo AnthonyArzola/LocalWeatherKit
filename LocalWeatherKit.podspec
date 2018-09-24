@@ -1,9 +1,7 @@
-
-
 Pod::Spec.new do |s|
 
   s.name         = "LocalWeatherKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "LocalWeatherKit simplifies communication with OpenWeatherMap API."
 
   s.description  = <<-DESC
@@ -11,7 +9,7 @@ Pod::Spec.new do |s|
                     AFNetworking and DCKeyValueObjectMapping.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/LocalWeatherKit"
+  s.homepage     = "https://github.com/AnthonyArzola/LocalWeatherKit"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
@@ -24,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "AFNetworking", "~> 3.0"
-  s.dependency "DCKeyValueObjectMapping", "~> 1.5"
+  s.dependency "AFNetworking", "3.1.0"
+  s.dependency "DCKeyValueObjectMapping", "1.5"
 
 end
