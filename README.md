@@ -1,3 +1,8 @@
+Deprecated
+===========
+This repo has been deprecated and replaced by [OpenWeatherMap](https://github.com/AnthonyArzola/OpenWeatherMap), a Swift Package. 
+
+
 LocalWeatherKit
 ===========
 
